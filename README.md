@@ -1,4 +1,5 @@
-[![image](https://user-images.githubusercontent.com/23049337/226212853-5b96a6ff-5a41-4b1c-9262-38666e43b491.png)](https://www.google.com/url?sa=i&url=https%3A%2F%2Fthechief.io%2Fc%2Fcloudplex%2Fistio-what-you-need-know%2F&psig=AOvVaw3b81oumJkXFcZT8iDQ1Lmm&ust=1686957350678000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPDe7f6zxv8CFQAAAAAdAAAAABAI)
+![image](https://github.com/virtapp/terraform-istio-deployment/assets/23049337/568f6a86-adb0-4936-a313-3cb6842f166f)
+
 
  
 Kubernetes in Docker with Terraform
