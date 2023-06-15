@@ -40,7 +40,8 @@ helm repo add kedacore https://kedacore.github.io/charts || true
 helm repo add open-metadata https://helm.open-metadata.org || true
 helm repo update && sleep 5
 helm fetch rancher-latest/rancher --version=v2.7.0 || true
-kubectl create namespace infra || true
+kubectl create namespace istio-system
+kubectl create namespace infra 
 kubectl create namespace cattle-system || true
 helm install rancher rancher-latest/rancher --version=v2.7.0 \
   --namespace cattle-system \
@@ -54,6 +55,9 @@ echo    Waiting for all pods in running mode:
 until kubectl wait --for=condition=Ready pods --all -n keda; do
 sleep 2
 done  2>/dev/null
+helm install istio-base istio/base -n istio-system
+helm install istiod istio/istiod -n istio-system –wait
+helm install istio-ingressgateway istio/gateway -n istio-system
 
              echo      "----- ............................. -----"
              echo         "---  LOAD-ARGO-APPLICATIONS  ---"
