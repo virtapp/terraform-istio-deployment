@@ -8,15 +8,15 @@ Kubernetes in Docker with Terraform
 
 🎯 About
 
-OpenMetadata Unlock the value of data assets with an end-to-end metadata platform that includes data discovery, governance, data quality, observability, and people collaborationd.
+Istio extends Kubernetes to establish a programmable, application-aware network using the powerful Envoy service proxy. Working with both Kubernetes and traditional workloads, Istio brings standard, universal traffic management.
 🚀 Technologies
 
-OpenMetadata depends on following components to build a metadata platform
+The Istio service mesh
 
-    JsonSchemas for defining Metadata Schemas
-    Dropwizard/Jetty for REST APIs
-    MySQL 8.x to store Metadata
-    ElasticSearch 7.x to index Metadata and power search
+    Traffic Management
+    Observability
+    Security
+    
 
 ✅ Requirements
 
